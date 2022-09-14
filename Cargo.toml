@@ -9,6 +9,9 @@ license = "MIT"
 homepage = "https://github.com/RustAudio/rust-portaudio"
 repository = "https://github.com/RustAudio/rust-portaudio.git"
 
+[target.'cfg(windows)'.build-dependencies]
+cmake = "0.1"
+
 [dependencies]
 bitflags = "0.8.2"
 libc = "0.2.51"
